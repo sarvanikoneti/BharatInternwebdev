@@ -1,0 +1,311 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <img src="profile.jpg" alt="My profile picture">
+                <p>Hi, I'm Sarvani Koneti, a web developer based in Vijayawada, India. I have a passion for creating beautiful and responsive websites using HTML, CSS, and JavaScript. I enjoy learning new technologies and solving problems.</p>
+            </section>
+            <section id="skills">
+                <h2>My Skills</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <img src="html-icon.jpeg" alt="HTML icon">
+                        <p>PYTHON</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="css-icon.jpeg" alt="CSS icon">
+                        <p>C</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="js-icon.jpeg" alt="JavaScript icon">
+                        <p><br>WEB<br> DEVELOPMENT </br></p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="bootstrap-icon.jpg" alt="Bootstrap icon">
+                        <p>  HARDWARE PROJECTS</p>
+                    </div>
+                   
+                </div>
+            </section>
+            <section id="projects">
+                <h2>My Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <img src="project1.jpeg" alt="Project 1 screenshot">
+                        <h3>Project 1</h3>
+                        <p>A Python Programms Done as a part of my internships.</p>
+                        <a href="https://www.linkedin.com/posts/sarvani-koneti_pythoninternship-codsoft-codsoftinternship-activity-7136961010048921600-YG-s?utm_source=share&utm_medium=member_desktop" target="_blank">View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <img src="project2.png" alt="Project 2 screenshot">
+                        <h3>Project 2</h3>
+                        <p>A Simple Landing Page for Adorable Animals as a part of Code-clause internship.</p>
+                        <a href="https://www.linkedin.com/posts/sarvani-koneti_webdevelopment-codeclauseinternship-landingpagecreation-activity-7139504947670253568-OGws?utm_source=share&utm_medium=member_desktop" target="_blank">View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <img src="project3.jpg" alt="Project 3 screenshot">
+                        <h3>Project 3</h3>
+                        <p>A Hardware Project Using AT89S52 Microcontroller done by me</p>
+                        <a href="https://www.linkedin.com/posts/sarvani-koneti_electroniccodelock-microcontrollermagic-ecevrsec-activity-7139599243765325824-BAw4?utm_source=share&utm_medium=member_desktop" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>If you are interested in working with me or have any questions, feel free to contact me using the form below or via email at 228w1a0492@vrsec.ac.in</p>
+                <form action="https://example.com/contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>© 2023 sarvani koneti. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/johndoe" target="_blank"><img src="facebook-icon.jpeg" alt="Facebook icon"></a>
+                <a href="https://www.twitter.com/johndoe" target="_blank"><img src="twitter-icon.jpeg" alt="Twitter icon"></a>
+                <a href="https://www.linkedin.com/in/johndoe" target="_blank"><img src="linkedin-icon.jpeg" alt="LinkedIn icon"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+/* style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+main {
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-item {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.skill-item img {
+  width: 80px;
+  height: 80px;
+}
+
+.skill-item p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-item {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  border-radius: 10px;
+  position: relative;
+}
+
+.project-item img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.project-item p {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.project-item a {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.project-item a:hover {
+  color: #f8f2f2;
+}
+
+#contact p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.social-icons img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
